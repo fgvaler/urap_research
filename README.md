@@ -33,49 +33,6 @@
 # Data Pipline Visualized
 ![](images/pipeline.png)
 
-The stages of the pipeline are denoted by the blue rectangles. The python modules are used to transform data from one stage of the pipeline to the next. The data pipeline starts starts off with the raw profile data. The dotted line to the right indicates that a human uses the printed output from processing.py to manually input data into a csv.
-
-At the very end of the pipeline we see the (score, feature vector) pairs that will be used for generating training decision trees in 'tree_and_forest.py'. Such analysis files are used to make observations at various stages of the pipeline.
-
-# Runnable File Usage
-First, ensure you have all the listed python files and the three listed subdirectories all in a single directory.
-
-## Using processing.py
-# Project Structure
-
-## Runnable Files:
-- processing.py
-- make_scores.py
-- analysis files:
-  - analysis_old.py
-  - avg_score_by_exp.py
-  - score_histograms.py
-  - report_code.ipynb
-  - tree_and_forest.py
-## Modules:
- - helpers.py
- - plot.py
- - score_calc.py
- - features.py
- - parse_scores.py
- - scores_with_features.py
- - refine_features.py
- ## Subdirectories:
-- graphs:
-  - may be empty
-- score_data:
-  - data_analysis_profiles.json
-- profile_data:
-  - annotations_AF.csv
-  - annotations_AF_new.csv
-  - annotations_200+.csv
-  - annotations_200+_new.csv
-  - annotations.csv
-  - manual_scores.csv
-  
-# Data Pipline Visualized
-![](images/pipeline.png)
-
 The stages of the pipeline are denoted by the blue rectangles. The python modules are used to transform data from one stage of the pipeline to the next. The data pipeline starts starts off with the raw profile data. The dotted line to the right indicates that a human uses the printed output from processing.py to manually input data into a csv. The only modules not shown in this diagram are helpers.py and plot.py which contain general and plot-related helper functions respectively that are used in various stages of the piepline.
 
 At the very end of the pipeline we see the (score, feature vector) pairs that will be used for generating training decision trees in 'tree_and_forest.py'. Such analysis files are used to make observations at various stages of the pipeline.
