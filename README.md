@@ -33,7 +33,7 @@
 # Data Pipline Visualized
 ![](images/pipeline.png)
 
-The stages of the pipeline are denoted by the blue rectangles. The python modules are used to transform data from one stage of the pipeline to the next. The data pipeline starts starts off with the raw profile data. The dotted line to the right indicates that a human uses the printed output from processing.py to manually input data into a csv. The only modules not shown in this diagram are helpers.py and plot.py which contain general and plot-related helper functions respectively that are used in various stages of the piepline.
+The stages of the pipeline are denoted by the blue rectangles. The python modules are used to transform data from one stage of the pipeline to the next. The data pipeline starts starts off with the raw profile data. The dotted line to the right indicates that a human uses the printed output from processing.py to manually input data into a csv. The only modules not shown in this diagram are helpers.py and plot.py which contain general and plot-related helper functions respectively that are used in various stages of the pipeline.
 
 At the very end of the pipeline we see the (score, feature vector) pairs that will be used for generating training decision trees in 'tree_and_forest.py'. Such analysis files are used to make observations at various stages of the pipeline.
 
